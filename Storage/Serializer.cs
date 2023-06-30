@@ -27,7 +27,7 @@ namespace MiTe.Storage
             var settings = new JsonSerializerSettings
             {
                 PreserveReferencesHandling = PreserveReferencesHandling.Objects,
-                DateFormatString = "yyyy-MM-ddTHH:mm:ss.fffZ" // set the custom date format string
+                DateFormatString = "yyyy-MM-ddTHH:mm:ss" // Set the custom date format string for date and time
             };
             List<T> objects = JsonConvert.DeserializeObject<List<T>>(jsonString, settings);
 

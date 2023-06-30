@@ -9,11 +9,11 @@ namespace MiTe.Models
     public class Stage
     {
         public string AtractionId { get; set; }
-        public DateTime StartTime { get; set; }
-        public DateTime EndTime { get; set; }
+        public TimeOnly StartTime { get; set; }
+        public TimeOnly EndTime { get; set; }
         public int PlannedBudget { get; set; }
         public Stage() { }
-        public Stage(string atractionId, DateTime startTime, DateTime endTime, int plannedBudget) 
+        public Stage(string atractionId, TimeOnly startTime, TimeOnly endTime, int plannedBudget) 
         {
             AtractionId = atractionId;
             StartTime = startTime;

@@ -21,8 +21,8 @@ namespace MiTe.Models
         public string Id { get; set; }
         public int Capasity { get; set; }
         public Language Language { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
+        public DateOnly StartDate { get; set; }
+        public DateOnly EndDate { get; set; }
         public List<Days> MaintenanceDays { get; set; }
         public List<Stage> Stages { get; set; }
         public string GuideUsername { get; set; }
@@ -30,7 +30,7 @@ namespace MiTe.Models
         public List<Category> Category { get; set; }
         public bool Free { get; set; }
         public Tour() { }
-        public Tour(string id, int capasity, Language language, DateTime startDate, DateTime endDate, List<Days> maintenanceDays, List<Stage> stages, string guideUsername, string city, List<Category> category, bool free)
+        public Tour(string id, int capasity, Language language, DateOnly startDate, DateOnly endDate, List<Days> maintenanceDays, List<Stage> stages, string guideUsername, string city, List<Category> category, bool free)
         {
             Id = id;
             Capasity = capasity;
