@@ -7,23 +7,10 @@ using System.Threading.Tasks;
 
 namespace MiTe.Models
 {
-    public enum Interest
-    {
-        Sightseeing,
-        Accommodation,
-        LocalCuisine,
-        OutdoorActivities,
-        CulturalExperiences,
-        Shopping,
-        Transportation,
-        LocalEvents,
-        SafetyAndSecurity,
-        TravelTipsAndGuides,
-    }
 
     public class Tourist : User
     {
-        public List<Interest> Interests { get; set; }
+        public List<Category> Interests { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
         public string ProfileImage { get; set; }
@@ -36,7 +23,7 @@ namespace MiTe.Models
 
         public Tourist(string phoneNumber, string email, bool subscription)
         {
-            this.Interests = new List<Interest>();
+            this.Interests = new List<Category>();
             this.PhoneNumber = phoneNumber;
             this.Email = email;
             this.ProfileImage = "";

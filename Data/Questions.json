@@ -1,0 +1,38 @@
+[
+  {
+    "Id": "questions1",
+    "TextQuestions": [
+      "How would you rate your guide's knowledge about the destination?",
+      "How engaging and entertaining was your guide during the tour?",
+      "Did your guide provide clear and informative explanations about the attractions?",
+      "How effectively did your guide communicate and interact with the group?",
+      "How well did your guide manage the timing and pacing of the tour?",
+      "Did your guide provide useful recommendations and tips for local experiences?"
+    ],
+    "QuestionType": 2
+  },
+  {
+    "Id": "questions2",
+    "TextQuestions": [
+      "How would you rate the overall organization and logistics of the tour?",
+      "How satisfied were you with the itinerary and the places visited during the tour?",
+      "Did the tour meet your expectations in terms of the activities and attractions included?",
+      "How well did the tour provide a balance between guided activities and free time for exploration?",
+      "How would you rate the value for money of the tour?",
+      "How likely are you to recommend this tour to others?"
+    ],
+    "QuestionType": 1
+  },
+  {
+    "Id": "questions3",
+    "TextQuestions": [
+      "How would you rate the level of engagement and participation of the tourist during the tour?",
+      "Did the tourist demonstrate a genuine interest in learning about the destination and its attractions?",
+      "Did the tourist display appropriate behavior and etiquette throughout the tour?",
+      "How well did the tourist interact with other members of the tour group?",
+      "Did the tourist ask relevant and thoughtful questions during the tour?",
+      "Did the tourist demonstrate patience and flexibility in dealing with unforeseen circumstances or changes to the itinerary?"
+    ],
+    "QuestionType": 0
+  }
+]

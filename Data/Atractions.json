@@ -1,0 +1,83 @@
+[
+  {
+    "Id": "attraction1",
+    "Title": "Louvre Museum",
+    "Description": "World's largest art museum and historic monument.",
+    "Address": "Rue de Rivoli",
+    "City": "Paris",
+    "Country": "France",
+    "Image": "louvre_museum.jpg"
+  },
+  {
+    "Id": "attraction2",
+    "Title": "Great Wall of China",
+    "Description": "A series of fortifications in northern China, spanning approximately 13,171 miles.",
+    "Address": "Huairou District",
+    "City": "Beijing",
+    "Country": "China",
+    "Image": "great_wall_of_china.jpg"
+  },
+  {
+    "Id": "attraction3",
+    "Title": "Machu Picchu",
+    "Description": "An ancient Inca citadel located in the Andes Mountains of Peru.",
+    "Address": "Urubamba Province",
+    "City": "Cusco",
+    "Country": "Peru",
+    "Image": "machu_picchu.jpg"
+  },
+  {
+    "Id": "attraction4",
+    "Title": "Taj Mahal",
+    "Description": "A white marble mausoleum located in Agra, Uttar Pradesh, India.",
+    "Address": "Dharmapuri, Forest Colony, Tajganj",
+    "City": "Agra",
+    "Country": "India",
+    "Image": "taj_mahal.jpg"
+  },
+  {
+    "Id": "attraction5",
+    "Title": "Christ the Redeemer",
+    "Description": "An Art Deco statue of Jesus Christ in Rio de Janeiro, Brazil.",
+    "Address": "Corcovado mountain",
+    "City": "Rio de Janeiro",
+    "Country": "Brazil",
+    "Image": "christ_the_redeemer.jpg"
+  },
+  {
+    "Id": "attraction6",
+    "Title": "Eiffel Tower",
+    "Description": "A wrought-iron lattice tower located on the Champ de Mars in Paris.",
+    "Address": "Champ de Mars, 5 Avenue Anatole France",
+    "City": "Paris",
+    "Country": "France",
+    "Image": "eiffel_tower.jpg"
+  },
+  {
+    "Id": "attraction7",
+    "Title": "Notre-Dame Cathedral",
+    "Description": "A medieval Catholic cathedral located on the Île de la Cité in Paris.",
+    "Address": "6 Parvis Notre-Dame - Pl. Jean-Paul II",
+    "City": "Paris",
+    "Country": "France",
+    "Image": "notre_dame_cathedral.jpg"
+  },
+  {
+    "Id": "attraction8",
+    "Title": "Palace of Versailles",
+    "Description": "A grand royal palace located in the city of Versailles, near Paris.",
+    "Address": "Place d'Armes",
+    "City": "Versailles",
+    "Country": "France",
+    "Image": "palace_of_versailles.jpg"
+  },
+  {
+    "Id": "attraction9",
+    "Title": "Montmartre",
+    "Description": "A historic neighborhood known for its bohemian atmosphere and Sacré-Cœur Basilica.",
+    "Address": "Montmartre",
+    "City": "Paris",
+    "Country": "France",
+    "Image": "montmartre.jpg"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "Id": "poll1",
+    "QuestionsId": "questions1",
+    "Answers": [ 4, 5, 2, 5, 3, 5 ],
+    "ForeignId": "vesna",
+    "RecommendationsForImprovement": "You can try to speak slower!"
+  },
+  {
+    "Id": "poll2",
+    "QuestionsId": "questions3",
+    "Answers": [ 5, 5, 2, 5, 4, 5 ],
+    "ForeignId": "ana",
+    "RecommendationsForImprovement": "I don't have any!"
+  },
+  {
+    "Id": "poll3",
+    "QuestionsId": "questions2",
+    "Answers": [ 5, 4, 5, 3, 5, 5 ],
+    "ForeignId": "tour1",
+    "RecommendationsForImprovement": "Maybe a little to much time for this Tour."
+  }
+
+]

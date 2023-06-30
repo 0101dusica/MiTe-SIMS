@@ -1,0 +1,14 @@
+[
+  {
+    "TourId": "tour1",
+    "TouristUsernames": [],
+    "QRCodes": [],
+    "StartDate": "2023-07-11T12:30:00"
+  },
+  {
+    "TourId": "tour2",
+    "TouristUsernames": [],
+    "QRCodes": [],
+    "StartDate": "2023-07-19T09:15:00"
+  }
+]
