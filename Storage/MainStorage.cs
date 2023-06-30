@@ -23,6 +23,10 @@ namespace MiTe.Storage
             this.Administrators = new List<Administrator>();
             this.Tourists = new List<Tourist>();
             this.Guides = new List<Guide>();
+
+            this.administratorStorage = new AdministratorStorage();
+            this.touristStorage = new TouristStorage();
+            this.guideStorage = new GuideStorage();
         }
 
         public void loadAllData()

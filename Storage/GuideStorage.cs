@@ -9,7 +9,7 @@ namespace MiTe.Storage
 {
     public class GuideStorage
     {
-        private const string StoragePath = "../Data/Guide.json";
+        private const string StoragePath = "../../../Data/Guide.json";
 
         private Serializer<Guide> _serializer;
 

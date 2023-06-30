@@ -9,7 +9,7 @@ namespace MiTe.Storage
 {
     public class AdministratorStorage
     {
-        private const string StoragePath = "../Data/Administrator.json";
+        private const string StoragePath = "../../../Data/Administrator.json";
 
         private Serializer<Administrator> _serializer;
 

@@ -9,7 +9,7 @@ namespace MiTe.Storage
 {
     public class TouristStorage
     {
-        private const string StoragePath = "../Data/Tourist.json";
+        private const string StoragePath = "../../../Data/Tourist.json";
 
         private Serializer<Tourist> _serializer;
 

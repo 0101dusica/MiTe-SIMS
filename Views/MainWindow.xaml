@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Log In" WindowStartupLocation="CenterScreen"
+        Title="MiTe" WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize" Height="450" Width="800">
     <Window.Resources>
         <Style x:Key="FocusVisual">
@@ -64,24 +64,25 @@
         </Style>
     </Window.Resources>
     <Window.Background>
-        <ImageBrush ImageSource="..\Images\bg.jpg" />
+        <ImageBrush ImageSource="..\Images\background.jpg" />
     </Window.Background>
     <Grid HorizontalAlignment="Left" Height="254" Margin="355,98,0,0" VerticalAlignment="Top" Width="384">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="191*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Label  Content="Username:" FontWeight="Bold" FontSize="16" Foreground="White"  HorizontalAlignment="Center" VerticalAlignment="Center" Height="28" Width="100"/>
-        <Label Grid.Row="1" Content="Password:" FontWeight="Bold" FontSize="16" Foreground="White"  HorizontalAlignment="Center" VerticalAlignment="Center" Height="28" Width="100"/>
-        <TextBox Grid.Column="1" Width="190" IsEnabled="True" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" FontSize="16" />
-        <TextBox Grid.Row="1" Grid.Column="1" Width="190" IsEnabled="True" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding Password, UpdateSourceTrigger=PropertyChanged}" FontSize="16" />
+        <Label  Content="Username:" FontWeight="Bold" FontSize="16" Foreground="DarkBlue"  HorizontalAlignment="Center" VerticalAlignment="Center" Height="28" Width="100"/>
+        <Label Grid.Row="1" Content="Password:" FontWeight="Bold" FontSize="16" Foreground="DarkBlue"  HorizontalAlignment="Center" VerticalAlignment="Center" Height="28" Width="100"/>
+        <TextBox Grid.Column="1" Width="190" IsEnabled="True" Height="35" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" FontSize="16" Grid.ColumnSpan="2" Margin="22,0,0,0" />
+        <TextBox Grid.Row="1" Grid.Column="1" Width="190" IsEnabled="True" Height="35" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding Password, UpdateSourceTrigger=PropertyChanged}" FontSize="16" Grid.ColumnSpan="2" Margin="22,0,0,0" />
 
-        <Button Style="{DynamicResource RoundedButtonShape}" Content="Login" Grid.Row="2" FontSize="16"  Margin="22,23,22,22"  Background="#FF90C2EE"  Foreground="White" FontWeight="Bold"  Command="{Binding LoginCommand}" Grid.Column="1">
+        <Button Style="{DynamicResource RoundedButtonShape}" Content="Login" Grid.Row="2" FontSize="16"  Margin="22,23,22,22"  Background="DarkBlue"  Foreground="White" FontWeight="Bold"  Command="{Binding LoginCommand}" Grid.Column="1" Grid.ColumnSpan="2">
 
             <Button.Effect>
                 <DropShadowEffect/>
@@ -96,7 +97,7 @@
             </Button.RenderTransform>
 
         </Button>
-        <Label Content="MiTe" HorizontalAlignment="Left" Height="69" Margin="75,-55,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="239" Foreground="#FF90C2EE" FontFamily="Ebrima" FontSize="35" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <Label Content="MiTe" HorizontalAlignment="Left" Height="69" Margin="75,-55,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="239" Foreground="DarkBlue" FontFamily="Ebrima" FontSize="35" FontWeight="Bold" Grid.ColumnSpan="3"/>
 
     </Grid>
 </Window>
