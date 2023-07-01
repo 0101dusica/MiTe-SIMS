@@ -41,11 +41,15 @@ namespace MiTe.ViewModels
         }
         public void AnalyticsCommand(object param)
         {
-            MessageBox.Show("Analytics");
+            AdministratorAnalyticsView administratorAnalyticsView = new AdministratorAnalyticsView(MainStorage);
+            this.AdministratorMainView.Hide();
+            administratorAnalyticsView.Show();
         }
         public void BlockUserCommand(object param)
         {
-            MessageBox.Show("BlockUser");
+            AdministratorBlockUsersView administratorBlockUsersView = new AdministratorBlockUsersView(MainStorage);
+            this.AdministratorMainView.Hide();
+            administratorBlockUsersView.Show();
         }
         
         public void LogOutCommand(object param)

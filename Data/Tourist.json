@@ -9,8 +9,8 @@
     "PhoneNumber": "067263482",
     "Email": "ana@gmail.com",
     "ProfileImage": "",
-    "QRCodes": [],
-    "Points": 0,
+    "QRCodes": ["qr1"],
+    "Points": 10,
     "Subscription": false
   }
 ]

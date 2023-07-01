@@ -24,7 +24,8 @@
     "City": "Paris",
     "Category": [ 0, 7 ],
     "Free": true,
-    "ImagePath": "../Images/paris1.jpg"
+    "ImagePath": "../Images/paris1.jpg",
+    "TourStatus": 0
   },
   {
     "Id": "tour2",
@@ -57,7 +58,8 @@
     "City": "Paris",
     "Category": [ 0, 7, 8 ],
     "Free": true,
-    "ImagePath": "../Images/paris2.jpg"
+    "ImagePath": "../Images/paris2.jpg",
+    "TourStatus": 2
   }
 
 ]

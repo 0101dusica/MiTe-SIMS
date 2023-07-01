@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MiTe.Storage;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,15 +9,31 @@ namespace MiTe.Models
 {
     public class Guide : User
     {
-        public double AverageRating { get; set; }
         public List<string> Tours { get; set; }
 
-        public Guide() { }
-
-        public Guide(double averageRating)
+        public Guide()
         {
-            AverageRating = averageRating;
             Tours = new List<string>();
+        }
+
+        public Tuple<string, double> getAvrageRatings(MainStorage mainStorage)
+        {
+            double ratingSum = 0;
+            int ratingCount = 0;
+
+            foreach (var poll in mainStorage.Polls)
+            {
+                if (poll.ForeignId == this.Username)
+                {
+                    foreach (var rate in poll.Answers)
+                    {
+                        ratingSum = ratingSum + rate;
+                        ratingCount++;
+                    }
+                }
+            }
+
+            return Tuple.Create(this.Username, Math.Round(ratingSum / ratingCount, 2));
         }
     }
 }

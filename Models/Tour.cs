@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MiTe.Storage;
+using System;
 using System.Collections.Generic;
 
 namespace MiTe.Models
@@ -15,6 +16,10 @@ namespace MiTe.Models
     {
         Cultural, Adventure, Food, Sightseeing, Wildlife, Nature, Historical, Educational, Photography, Wellness, Private
     }
+    public enum TourStatus
+    {
+        Accepted, Rejected, WaitingApproval
+    }
 
     public class Tour
     {
@@ -28,10 +33,13 @@ namespace MiTe.Models
         public string GuideUsername { get; set; }
         public string City { get; set; }
         public List<Category> Category { get; set; }
+        public double AverageRating { get; set; }
         public bool Free { get; set; }
         public string ImagePath { get; set; }
+
+        public TourStatus TourStatus { get; set; }
         public Tour() { }
-        public Tour(string id, int capasity, Language language, DateOnly startDate, DateOnly endDate, List<Days> maintenanceDays, List<Stage> stages, string guideUsername, string city, List<Category> category, bool free, string imagePath)
+        public Tour(string id, int capasity, Language language, DateOnly startDate, DateOnly endDate, List<Days> maintenanceDays, List<Stage> stages, string guideUsername, string city, List<Category> category, double avrRating, bool free, string imagePath)
         {
             Id = id;
             Capasity = capasity;
@@ -43,8 +51,30 @@ namespace MiTe.Models
             GuideUsername = guideUsername;
             City = city;
             Category = category;
+            AverageRating = avrRating;
             Free = free;
             ImagePath = imagePath;
+            TourStatus = TourStatus.WaitingApproval;
+        }
+
+        public Tuple<string, double> getAvrageRatings(MainStorage mainStorage)
+        {
+            double ratingSum = 0;
+            int ratingCount = 0;
+            
+            foreach (var poll in mainStorage.Polls)
+            {
+                if(poll.ForeignId == this.Id && this.TourStatus == TourStatus.Accepted)
+                {
+                    foreach(var rate in poll.Answers)
+                    {
+                        ratingSum = ratingSum + rate;
+                        ratingCount++;
+                    }
+                }
+            }
+
+            return Tuple.Create(this.Id, Math.Round(ratingSum/ratingCount, 2));
         }
     }
 }
