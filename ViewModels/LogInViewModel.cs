@@ -42,7 +42,9 @@ namespace MiTe.ViewModels
                 if (MainStorage.Tourists[i].Username == this.Username && MainStorage.Tourists[i].Password == this.Password)
                 {
                     MainStorage.LoggedUser = MainStorage.Tourists[i];
-                    MessageBox.Show("you logged in as a tourist");
+                    TouristMainView touristMainView = new TouristMainView(MainStorage);
+                    LogInView.Close();
+                    touristMainView.Show();
                     return;
                 }
 

@@ -11,7 +11,7 @@ using System.Windows.Input;
 
 namespace MiTe.ViewModels
 {
-    public class GuideMainViewModel
+    public class GuideMainViewModel : BaseViewModel
     {
         public GuideMainView GuideMainView { get; set; }
         public MainStorage MainStorage { get; set; }
@@ -32,7 +32,6 @@ namespace MiTe.ViewModels
             {
                 this.Tours = new List<Tour>();
             }
-
 
             MakeNewTour = new RelayCommand((param) => MakeNewTourCommand(param));
             ReviewTourist = new RelayCommand((param) => ReviewTouristCommand(param));

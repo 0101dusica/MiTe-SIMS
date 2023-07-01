@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MiTe.Storage;
+using MiTe.ViewModels;
 
 namespace MiTe.Views
 {
@@ -19,9 +21,10 @@ namespace MiTe.Views
     /// </summary>
     public partial class TouristMainView : Window
     {
-        public TouristMainView()
+        public TouristMainView(MainStorage mainStorage)
         {
             InitializeComponent();
+            DataContext = new TouristMainViewModel(mainStorage, this);
         }
     }
 }

@@ -10,7 +10,7 @@ using System.Windows.Input;
 
 namespace MiTe.ViewModels
 {
-    public class AdministratorMainViewModel :BaseViewModel
+    public class AdministratorMainViewModel : BaseViewModel
     {
         public MainStorage MainStorage { get; set; }
         public AdministratorMainView AdministratorMainView { get; set; }
