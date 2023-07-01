@@ -44,6 +44,7 @@ namespace MiTe.Storage
 
             this.administratorStorage = new AdministratorStorage();
             this.touristStorage = new TouristStorage();
+            this.guideStorage = new GuideStorage();
             this.tourStorage = new TourStorage();
             this.atractionStorage = new AtractionStorage();
             this.reservationStorage = new ReservationStorage();

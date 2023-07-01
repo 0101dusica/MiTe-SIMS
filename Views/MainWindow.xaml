@@ -64,7 +64,7 @@
         </Style>
     </Window.Resources>
     <Window.Background>
-        <ImageBrush ImageSource="..\Images\background.jpg" />
+        <ImageBrush ImageSource="..\Images\background.jpg" Opacity="0.5"/>
     </Window.Background>
     <Grid HorizontalAlignment="Left" Height="254" Margin="355,98,0,0" VerticalAlignment="Top" Width="384">
         <Grid.ColumnDefinitions>

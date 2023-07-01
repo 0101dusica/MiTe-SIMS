@@ -55,9 +55,9 @@ namespace MiTe.ViewModels
                 {
                     MainStorage.LoggedUser = MainStorage.Administrators[i];
                     MessageBox.Show("you logged in as a admin");
-                    //MenuAdministratorView menuAdministratorView = new MenuAdministratorView(MainStorage);
-                    //LogInView.Close();
-                    //menuAdministratorView.Show();
+                    AdministratorMainView menuAdministratorView = new AdministratorMainView(MainStorage);
+                    LogInView.Close();
+                    menuAdministratorView.Show();
                     return;
                 }
 

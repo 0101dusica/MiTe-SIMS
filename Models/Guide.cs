@@ -9,14 +9,14 @@ namespace MiTe.Models
     public class Guide : User
     {
         public double AverageRating { get; set; }
-        public List<Tour> Tours { get; set; }
+        public List<string> Tours { get; set; }
 
         public Guide() { }
 
         public Guide(double averageRating)
         {
             AverageRating = averageRating;
-            Tours = new List<Tour>();
+            Tours = new List<string>();
         }
     }
 }

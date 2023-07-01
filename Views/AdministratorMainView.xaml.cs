@@ -1,28 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using MiTe.Storage;
+using MiTe.ViewModels;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace MiTe.Views
 {
     /// <summary>
     /// Interaction logic for AdministratorMainView.xaml
     /// </summary>
-    public partial class AdministratorMainView : Page
+    public partial class AdministratorMainView : Window
     {
-        public AdministratorMainView()
+        public AdministratorMainView(MainStorage mainStorage)
         {
             InitializeComponent();
+            DataContext = new AdministratorMainViewModel(mainStorage, this);
         }
     }
 }

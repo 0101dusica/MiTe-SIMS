@@ -1,11 +1,11 @@
 ﻿[
   {
-    "FirstName": "",
-    "LastName": "",
+    "FirstName": "Vesna",
+    "LastName": "Vesna123",
     "Username": "vesna",
     "Password": "vesna123",
     "UserStatus": true,
     "AverageRating": 0.0,
-    "Tours": []
+    "Tours": ["tour1"]
   }
 ]
