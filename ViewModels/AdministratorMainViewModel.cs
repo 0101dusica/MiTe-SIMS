@@ -18,6 +18,7 @@ namespace MiTe.ViewModels
         public ICommand AcceptTour { get; }
         public ICommand Analytics { get; }
         public ICommand BlockUser { get; }
+        public ICommand LogOut { get; }
         public AdministratorMainViewModel(MainStorage mainStorage, AdministratorMainView administratorMainView) 
         {
             MainStorage = mainStorage;
@@ -26,6 +27,7 @@ namespace MiTe.ViewModels
             AcceptTour = new RelayCommand((param) => AcceptTourCommand(param));
             Analytics = new RelayCommand((param) => AnalyticsCommand(param));
             BlockUser = new RelayCommand((param) => BlockUserCommand(param));
+            LogOut = new RelayCommand((param) => LogOutCommand(param));
         }
 
         public void RemoveTourCommand(object param)
@@ -44,6 +46,13 @@ namespace MiTe.ViewModels
         public void BlockUserCommand(object param)
         {
             MessageBox.Show("BlockUser");
+        }
+        
+        public void LogOutCommand(object param)
+        {
+            MainWindow mainView = new MainWindow();
+            this.AdministratorMainView.Hide();
+            mainView.Show();
         }
     }
 }

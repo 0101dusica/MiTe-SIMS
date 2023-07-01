@@ -9,6 +9,9 @@
 
   <ItemGroup>
     <None Remove="Images\background1.jpg" />
+    <None Remove="Images\background2.jpg" />
+    <None Remove="Images\paris1.jpg" />
+    <None Remove="Images\paris2.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,6 +21,9 @@
 
   <ItemGroup>
     <Resource Include="Images\background1.jpg" />
+    <Resource Include="Images\background2.jpg" />
+    <Resource Include="Images\paris1.jpg" />
+    <Resource Include="Images\paris2.jpg" />
   </ItemGroup>
 
 </Project>

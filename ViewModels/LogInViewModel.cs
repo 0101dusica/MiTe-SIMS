@@ -29,13 +29,13 @@ namespace MiTe.ViewModels
                 if (MainStorage.Guides[i].Username == this.Username && MainStorage.Guides[i].Password == this.Password)
                 {
                     MainStorage.LoggedUser = MainStorage.Guides[i];
-                    MessageBox.Show("you logged in as a guide");
+                    GuideMainView guideMainView = new GuideMainView(MainStorage);
+                    LogInView.Close();
+                    guideMainView.Show();
                     return;
                 }
 
             }
-
-
 
             for (int i = 0; i < MainStorage.Tourists.Count; i++)
             {
@@ -54,7 +54,6 @@ namespace MiTe.ViewModels
                 if (MainStorage.Administrators[i].Username == this.Username && MainStorage.Administrators[i].Password == this.Password)
                 {
                     MainStorage.LoggedUser = MainStorage.Administrators[i];
-                    MessageBox.Show("you logged in as a admin");
                     AdministratorMainView menuAdministratorView = new AdministratorMainView(MainStorage);
                     LogInView.Close();
                     menuAdministratorView.Show();

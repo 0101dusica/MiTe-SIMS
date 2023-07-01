@@ -29,8 +29,9 @@ namespace MiTe.Models
         public string City { get; set; }
         public List<Category> Category { get; set; }
         public bool Free { get; set; }
+        public string ImagePath { get; set; }
         public Tour() { }
-        public Tour(string id, int capasity, Language language, DateOnly startDate, DateOnly endDate, List<Days> maintenanceDays, List<Stage> stages, string guideUsername, string city, List<Category> category, bool free)
+        public Tour(string id, int capasity, Language language, DateOnly startDate, DateOnly endDate, List<Days> maintenanceDays, List<Stage> stages, string guideUsername, string city, List<Category> category, bool free, string imagePath)
         {
             Id = id;
             Capasity = capasity;
@@ -43,6 +44,7 @@ namespace MiTe.Models
             City = city;
             Category = category;
             Free = free;
+            ImagePath = imagePath;
         }
     }
 }
