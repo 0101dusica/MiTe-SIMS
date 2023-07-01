@@ -64,7 +64,7 @@
         </Style>
     </Window.Resources>
     <Window.Background>
-        <ImageBrush ImageSource="..\Images\background.jpg" Opacity="0.5" />
+        <ImageBrush ImageSource="..\Images\background2.jpg" Opacity="0.5" />
     </Window.Background>
     <Grid>
         <Grid.RowDefinitions>
