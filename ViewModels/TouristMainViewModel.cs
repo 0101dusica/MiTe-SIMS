@@ -68,7 +68,7 @@ namespace MiTe.ViewModels
         public void LogOutCommand(object param)
         {
             TouristMainView mainView = new TouristMainView(MainStorage);
-            this.TouristReviewTourView.Hide();
+            this.TouristMainView.Hide();
             mainView.Show();
         }
     }
