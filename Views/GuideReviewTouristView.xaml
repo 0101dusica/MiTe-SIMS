@@ -80,7 +80,7 @@
 
 
             <StackPanel Grid.Row="0">
-            <TextBlock Text="{Binding Questions[0]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+            <TextBlock Text="{Binding Questions[0]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue" Background="LightBlue" Opacity="0.7" Width="700" Margin="0 10 0 10"/>
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -99,7 +99,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="1">
-            <TextBlock Text="{Binding Questions[1]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+            <TextBlock Text="{Binding Questions[1]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue" Background="LightBlue" Opacity="0.7" Width="700" Margin="0 10 0 10"/>
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -118,7 +118,7 @@
         </StackPanel>
     
             <StackPanel Grid.Row="2">
-            <TextBlock Text="{Binding Questions[2]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+            <TextBlock Text="{Binding Questions[2]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue" Background="LightBlue" Opacity="0.7" Width="700" Margin="0 10 0 10"/>
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -137,7 +137,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="3">
-                <TextBlock Text="{Binding Questions[3]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+            <TextBlock Text="{Binding Questions[3]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue" Background="LightBlue" Opacity="0.7" Width="700" Margin="0 10 0 10"/>
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -156,7 +156,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="4">
-            <TextBlock Text="{Binding Questions[4]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+            <TextBlock Text="{Binding Questions[4]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue" Background="LightBlue" Opacity="0.7" Width="700" Margin="0 10 0 10"/>
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -175,7 +175,7 @@
             </StackPanel>
 
             <StackPanel Grid.Row="5">
-            <TextBlock Text="{Binding Questions[5]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+            <TextBlock Text="{Binding Questions[5]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue" Background="LightBlue" Opacity="0.7" Width="700" Margin="0 10 0 10"/>
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
