@@ -30,7 +30,6 @@ namespace MiTe.Models
         public DateOnly StartDate { get; set; }
         public DateOnly EndDate { get; set; }
         public List<Days> MaintenanceDays { get; set; }
-        public List<string> QRCodes { get; set; }
         public List<Stage> Stages { get; set; }
         public string GuideUsername { get; set; }
         public string City { get; set; }
@@ -48,7 +47,6 @@ namespace MiTe.Models
             StartDate = startDate;
             EndDate = endDate;
             MaintenanceDays = maintenanceDays;
-            QRCodes = new List<string>();
             Stages = stages;
             GuideUsername = guideUsername;
             City = city;

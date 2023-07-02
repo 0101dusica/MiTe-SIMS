@@ -6,7 +6,6 @@
     "StartDate": "2023-05-01",
     "EndDate": "2023-10-01",
     "MaintenanceDays": [ 0, 2, 4 ],
-    "QRCodes": [ "qr1", "qr2" ],
     "Stages": [
       {
         "Atraction": "atraction6",
@@ -35,7 +34,6 @@
     "StartDate": "2023-01-01",
     "EndDate": "2023-12-31",
     "MaintenanceDays": [ 1, 3 ],
-    "QRCodes": [ "qr3", "qr4" ],
     "Stages": [
       {
         "Atraction": "atraction7",
@@ -70,7 +68,6 @@
     "StartDate": "2023-03-15",
     "EndDate": "2023-03-20",
     "MaintenanceDays": [ 2, 4 ],
-    "QRCodes": [ "qr5", "qr6" ],
     "Stages": [
       {
         "Attraction": "attraction5",
@@ -105,7 +102,6 @@
     "StartDate": "2023-06-01",
     "EndDate": "2023-06-07",
     "MaintenanceDays": [ 1, 2, 3, 4, 5 ],
-    "QRCodes": [ "qr7", "qr8" ],
     "Stages": [
       {
         "Attraction": "attraction14",
