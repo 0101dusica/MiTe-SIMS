@@ -1,16 +1,46 @@
 ﻿[
   {
-    "FirstName": "",
-    "LastName": "",
+    "FirstName": "Ana",
+    "LastName": "Poparic",
     "Username": "ana",
     "Password": "ana123",
     "UserStatus": true,
-    "Interests": [],
+    "Interests": [0, 2, 4],
     "PhoneNumber": "067263482",
     "Email": "ana@gmail.com",
     "ProfileImage": "",
-    "QRCodes": ["qr1"],
+    "QRCodes": [ "qr1" ],
     "Points": 10,
     "Subscription": false
+  },
+  {
+    "FirstName": "Michael",
+    "LastName": "Smith",
+    "Username": "michael",
+    "Password": "michael123",
+    "UserStatus": true,
+    "Interests": [ 0, 3, 4 ],
+    "PhoneNumber": "555555555",
+    "Email": "michael@example.com",
+    "ProfileImage": "profile.jpeg",
+    "QRCodes": [ "qr3" ],
+    "Points": 100,
+    "Subscription": false
+  },
+  {
+    "FirstName": "Sarah",
+    "LastName": "Johnson",
+    "Username": "sarah",
+    "Password": "sarah123",
+    "UserStatus": false,
+    "Interests": [ 1, 3, 5 ],
+    "PhoneNumber": "987654321",
+    "Email": "sarahj@example.com",
+    "ProfileImage": "profile.png",
+    "QRCodes": [ "qr4", "qr2" ],
+    "Points": 20,
+    "Subscription": true
   }
+
+
 ]

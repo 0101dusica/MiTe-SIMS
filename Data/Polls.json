@@ -19,6 +19,55 @@
     "Answers": [ 5, 4, 5, 3, 5, 5 ],
     "ForeignId": "tour1",
     "RecommendationsForImprovement": "Maybe a little to much time for this Tour."
+  },
+  {
+    "Id": "poll4",
+    "QuestionsId": "questions3",
+    "Answers": [ 2, 5, 2, 5, 2, 5 ],
+    "ForeignId": "michael",
+    "RecommendationsForImprovement": "Too much complaints!"
+  },
+  {
+    "Id": "poll5",
+    "QuestionsId": "questions3",
+    "Answers": [ 5, 4, 2, 5, 4, 5 ],
+    "ForeignId": "ana",
+    "RecommendationsForImprovement": "Too much questions!"
+  },
+  {
+    "Id": "poll6",
+    "QuestionsId": "questions3",
+    "Answers": [ 5, 3, 2, 4, 4, 5 ],
+    "ForeignId": "sarah",
+    "RecommendationsForImprovement": "Great!"
+  },
+  {
+    "Id": "poll7",
+    "QuestionsId": "questions2",
+    "Answers": [ 5, 5, 5, 3, 5, 5 ],
+    "ForeignId": "tour2",
+    "RecommendationsForImprovement": "Maybe a little to much time for this Tour."
+  },
+  {
+    "Id": "poll8",
+    "QuestionsId": "questions2",
+    "Answers": [ 2, 5, 4, 3, 5, 5 ],
+    "ForeignId": "tour1",
+    "RecommendationsForImprovement": "Too much informations at one time, little boring."
+  },
+  {
+    "Id": "poll9",
+    "QuestionsId": "questions1",
+    "Answers": [ 4, 5, 5, 5, 4, 5 ],
+    "ForeignId": "mark",
+    "RecommendationsForImprovement": "You can try to speak with more empathy!"
+  },
+  {
+    "Id": "poll10",
+    "QuestionsId": "questions1",
+    "Answers": [ 4, 4, 5, 5, 1, 5 ],
+    "ForeignId": "howard",
+    "RecommendationsForImprovement": "Mutual filings for this guide!"
   }
 
 ]

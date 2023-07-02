@@ -1,10 +1,26 @@
 ﻿[
   {
     "FirstName": "Vesna",
-    "LastName": "Vesna123",
+    "LastName": "Vasic",
     "Username": "vesna",
     "Password": "vesna123",
     "UserStatus": true,
-    "Tours": ["tour1", "tour2"]
+    "Tours": [ "tour1"]
+  },
+  {
+    "FirstName": "Mark",
+    "LastName": "Josen",
+    "Username": "mark",
+    "Password": "mark123",
+    "UserStatus": true,
+    "Tours": [ "tour2" ]
+  },
+  {
+    "FirstName": "Howard",
+    "LastName": "Chace",
+    "Username": "howard",
+    "Password": "howard123",
+    "UserStatus": true,
+    "Tours": [ ]
   }
 ]

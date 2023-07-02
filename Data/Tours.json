@@ -6,6 +6,7 @@
     "StartDate": "2023-05-01",
     "EndDate": "2023-10-01",
     "MaintenanceDays": [ 0, 2, 4 ],
+    "QRCodes": [ "qr1", "qr2" ],
     "Stages": [
       {
         "Atraction": "atraction6",
@@ -34,6 +35,7 @@
     "StartDate": "2023-01-01",
     "EndDate": "2023-12-31",
     "MaintenanceDays": [ 1, 3 ],
+    "QRCodes": [ "qr3", "qr4" ],
     "Stages": [
       {
         "Atraction": "atraction7",
@@ -54,7 +56,7 @@
         "PlannedBudget": 60
       }
     ],
-    "GuideUsername": "vesna",
+    "GuideUsername": "mark",
     "City": "Paris",
     "Category": [ 0, 7, 8 ],
     "Free": true,
