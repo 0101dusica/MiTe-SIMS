@@ -33,8 +33,8 @@ namespace MiTe.ViewModels
         }
 
         public List<string> Questions { get; set; }
-        ICommand Submit { get; }
-        ICommand LogOut { get; }
+        public ICommand Submit { get; }
+        public ICommand LogOut { get; }
         public GuideReviewTouristViewModel(MainStorage mainStorage, GuideReviewTouristView guideReviewTouristView)
         {
             MainStorage = mainStorage;
