@@ -52,7 +52,7 @@
     "Id": "poll8",
     "QuestionsId": "questions2",
     "Answers": [ 2, 5, 4, 3, 5, 5 ],
-    "ForeignId": "tour1",
+    "ForeignId": "tour3",
     "RecommendationsForImprovement": "Too much informations at one time, little boring."
   },
   {

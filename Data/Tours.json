@@ -56,12 +56,81 @@
         "PlannedBudget": 60
       }
     ],
-    "GuideUsername": "mark",
+    "GuideUsername": "vesna",
     "City": "Paris",
     "Category": [ 0, 3, 7 ],
     "Free": true,
     "ImagePath": "../Images/paris2.jpg",
     "TourStatus": 0
+  },
+  {
+    "Id": "tour3",
+    "Capacity": 20,
+    "Language": 2,
+    "StartDate": "2023-03-15",
+    "EndDate": "2023-03-20",
+    "MaintenanceDays": [ 2, 4 ],
+    "QRCodes": [ "qr5", "qr6" ],
+    "Stages": [
+      {
+        "Attraction": "attraction5",
+        "StartTime": "09:00:00",
+        "EndTime": "12:00:00",
+        "PlannedBudget": 25
+      },
+      {
+        "Attraction": "attraction10",
+        "StartTime": "13:00:00",
+        "EndTime": "15:00:00",
+        "PlannedBudget": 35
+      },
+      {
+        "Attraction": "attraction12",
+        "StartTime": "15:30:00",
+        "EndTime": "17:30:00",
+        "PlannedBudget": 40
+      }
+    ],
+    "GuideUsername": "mark",
+    "City": "Rio de Janeiro",
+    "Category": [ 1, 4, 6 ],
+    "Free": false,
+    "ImagePath": "../Images/rioDeJaneiro1.jpg",
+    "TourStatus": 0
+  },
+  {
+    "Id": "tour4",
+    "Capacity": 10,
+    "Language": 0,
+    "StartDate": "2023-06-01",
+    "EndDate": "2023-06-07",
+    "MaintenanceDays": [ 1, 2, 3, 4, 5 ],
+    "QRCodes": [ "qr7", "qr8" ],
+    "Stages": [
+      {
+        "Attraction": "attraction14",
+        "StartTime": "10:00:00",
+        "EndTime": "12:30:00",
+        "PlannedBudget": 50
+      },
+      {
+        "Attraction": "attraction13",
+        "StartTime": "13:00:00",
+        "EndTime": "16:00:00",
+        "PlannedBudget": 30
+      },
+      {
+        "Attraction": "attraction15",
+        "StartTime": "16:30:00",
+        "EndTime": "18:30:00",
+        "PlannedBudget": 45
+      }
+    ],
+    "GuideUsername": "howard",
+    "City": "Rio de Janeiro",
+    "Category": [ 2, 5 ],
+    "Free": true,
+    "ImagePath": "../Images/rioDeJaneiro2.jpg",
+    "TourStatus": 2
   }
-
 ]

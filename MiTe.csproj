@@ -16,6 +16,8 @@
     <None Remove="Images\qr1.png" />
     <None Remove="Images\qr2.png" />
     <None Remove="Images\qr3.png" />
+    <None Remove="Images\rioDeJaneiro1.jpg" />
+    <None Remove="Images\rioDeJaneiro2.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,6 +34,8 @@
     <Resource Include="Images\qr1.png" />
     <Resource Include="Images\qr2.png" />
     <Resource Include="Images\qr3.png" />
+    <Resource Include="Images\rioDeJaneiro1.jpg" />
+    <Resource Include="Images\rioDeJaneiro2.jpg" />
   </ItemGroup>
 
 </Project>

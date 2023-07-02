@@ -79,5 +79,59 @@
     "City": "Paris",
     "Country": "France",
     "Image": "montmartre.jpg"
+  },
+  {
+    "Id": "attraction10",
+    "Title": "Sugarloaf Mountain",
+    "Description": "A peak situated in Rio de Janeiro, known for its panoramic views of the city.",
+    "Address": "Av. Pasteur, 520 - Urca",
+    "City": "Rio de Janeiro",
+    "Country": "Brazil",
+    "Image": "sugarloaf_mountain.jpg"
+  },
+  {
+    "Id": "attraction11",
+    "Title": "Copacabana Beach",
+    "Description": "One of the most famous beaches in the world, located in the neighborhood of Copacabana.",
+    "Address": "Av. Atlântica",
+    "City": "Rio de Janeiro",
+    "Country": "Brazil",
+    "Image": "copacabana_beach.jpg"
+  },
+  {
+    "Id": "attraction12",
+    "Title": "Ipanema Beach",
+    "Description": "A popular beach located in the neighborhood of Ipanema, known for its vibrant atmosphere.",
+    "Address": "Av. Vieira Souto",
+    "City": "Rio de Janeiro",
+    "Country": "Brazil",
+    "Image": "ipanema_beach.jpg"
+  },
+  {
+    "Id": "attraction13",
+    "Title": "Tijuca National Park",
+    "Description": "A tropical rainforest and national park, offering hiking trails and stunning waterfalls.",
+    "Address": "Estrada da Cascatinha, 850 - Alto da Boa Vista",
+    "City": "Rio de Janeiro",
+    "Country": "Brazil",
+    "Image": "tijuca_national_park.jpg"
+  },
+  {
+    "Id": "attraction14",
+    "Title": "Maracanã Stadium",
+    "Description": "One of the most iconic football stadiums in the world, home to many historic matches.",
+    "Address": "Av. Pres. Castelo Branco, Portão 3 - Maracanã",
+    "City": "Rio de Janeiro",
+    "Country": "Brazil",
+    "Image": "maracana_stadium.jpg"
+  },
+  {
+    "Id": "attraction15",
+    "Title": "Jardim Botânico",
+    "Description": "A botanical garden featuring a wide variety of plants, trees, and beautiful pathways.",
+    "Address": "Rua Jardim Botânico, 1008 - Jardim Botânico",
+    "City": "Rio de Janeiro",
+    "Country": "Brazil",
+    "Image": "jardim_botanico.jpg"
   }
 ]
