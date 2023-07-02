@@ -11,23 +11,24 @@ using System.Windows.Input;
 
 namespace MiTe.ViewModels
 {
-    public class GuideReviewTouristViewModel : BaseViewModel
+    public class TouristReviewGuideViewModel : BaseViewModel
     {
         public MainStorage MainStorage { get; set; }
-        public GuideReviewTouristView GuideReviewTouristView { get; set; }
-        public List<string> Tourists { get; set; }
+        public TouristReviewGuideView TouristReviewGuideView { get; set; }
 
-        private string _touristPicked;
-        public string? TouristPicked
+        public List<string> Guides { get; set; }
+
+        private string _guidePicked;
+        public string? GuidePicked
         {
-            get { return _touristPicked; }
+            get { return _guidePicked; }
             set
             {
-                if (_touristPicked != value)
+                if (_guidePicked != value)
                 {
-                    _touristPicked = value;
-                    OnPropertyChanged(nameof(TouristPicked));
-                    TouristPicked = null;
+                    _guidePicked = value;
+                    OnPropertyChanged(nameof(GuidePicked));
+                    GuidePicked = null;
                 }
             }
         }
@@ -35,23 +36,24 @@ namespace MiTe.ViewModels
         public List<string> Questions { get; set; }
         ICommand Submit { get; }
         ICommand LogOut { get; }
-        public GuideReviewTouristViewModel(MainStorage mainStorage, GuideReviewTouristView guideReviewTouristView)
+
+        public TouristReviewGuideViewModel(MainStorage mainStorage, TouristReviewGuideView touristReviewGuideView)
         {
             MainStorage = mainStorage;
-            GuideReviewTouristView = guideReviewTouristView;
+            TouristReviewGuideView = touristReviewGuideView;
 
-            Tourists = new List<string>();
+            Guides = new List<string>();
 
-            foreach(var tourist in MainStorage.Tourists)
+            foreach (var guide in MainStorage.Guides)
             {
-                Tourists.Add(tourist.Username);
+                Guides.Add(guide.Username);
             }
 
             Questions = new List<string>();
 
-            foreach(var question in MainStorage.Questions)
+            foreach (var question in MainStorage.Questions)
             {
-                if(question.Type == Models.QuestionType.Tourist)
+                if (question.Type == Models.QuestionType.Tourist)
                 {
                     Questions = question.TextQuestions;
                 }
@@ -68,7 +70,7 @@ namespace MiTe.ViewModels
         public void LogOutCommand(object param)
         {
             GuideMainView mainView = new GuideMainView(MainStorage);
-            this.GuideReviewTouristView.Hide();
+            this.TouristReviewGuideView.Hide();
             mainView.Show();
         }
     }

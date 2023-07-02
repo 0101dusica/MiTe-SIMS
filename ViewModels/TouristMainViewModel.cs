@@ -18,7 +18,7 @@ namespace MiTe.ViewModels
         public List<Tour> Tours { get; set; }
         public ICommand ReserveTour { get; }
         public ICommand VerifyQR { get; }
-        public ICommand GetReservationHistory { get; }
+        public ICommand ReviewTour { get; }
         public ICommand ReviewGuide { get; }
         public ICommand LogOut { get; }
         public TouristMainViewModel(MainStorage mainStorage, TouristMainView touristMainView)
@@ -36,26 +36,34 @@ namespace MiTe.ViewModels
 
             ReserveTour = new RelayCommand((param) => ReserveTourCommand(param));
             VerifyQR = new RelayCommand((param) => VerifyQRCommand(param));
-            GetReservationHistory = new RelayCommand((param) => GetReservationHistoryCommand(param));
+            ReviewTour = new RelayCommand((param) => ReviewTourCommand(param));
             ReviewGuide = new RelayCommand((param) => ReviewGuideCommand(param));
             LogOut = new RelayCommand((param) => LogOutCommand(param));
         }
 
         public void ReserveTourCommand(object param)
         {
-            MessageBox.Show("ReserveTourCommand");
+            TouristReserveTourView mainView = new TouristReserveTourView(MainStorage);
+            this.TouristMainView.Hide();
+            mainView.Show();
         }
         public void VerifyQRCommand(object param)
         {
-            MessageBox.Show("VerifyQRCommand");
+            TouristVerifyQRView mainView = new TouristVerifyQRView(MainStorage);
+            this.TouristMainView.Hide();
+            mainView.Show();
         }
-        public void GetReservationHistoryCommand(object param)
+        public void ReviewTourCommand(object param)
         {
-            MessageBox.Show("GetReservationHistoryCommand");
+            TouristReserveTourView mainView = new TouristReserveTourView(MainStorage);
+            this.TouristMainView.Hide();
+            mainView.Show();
         }
         public void ReviewGuideCommand(object param)
         {
-            MessageBox.Show("ReviewGuideCommand");
+            TouristReviewGuideView mainView = new TouristReviewGuideView(MainStorage);
+            this.TouristMainView.Hide();
+            mainView.Show();
         }
         public void LogOutCommand(object param)
         {
