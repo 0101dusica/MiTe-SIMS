@@ -53,9 +53,12 @@ namespace MiTe.ViewModels
 
             foreach (var question in MainStorage.Questions)
             {
-                if (question.Type == Models.QuestionType.Guide)
+                if (question.Type == QuestionType.Guide)
                 {
-                    Questions = question.TextQuestions;
+                    foreach(var questionText in question.TextQuestions)
+                    {
+                        Questions.Add(questionText);
+                    }
                 }
             }
 

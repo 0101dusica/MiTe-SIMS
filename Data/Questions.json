@@ -9,7 +9,7 @@
       "How well did your guide manage the timing and pacing of the tour?",
       "Did your guide provide useful recommendations and tips for local experiences?"
     ],
-    "QuestionType": 2
+    "Type": 2
   },
   {
     "Id": "questions2",
@@ -21,7 +21,7 @@
       "How would you rate the value for money of the tour?",
       "How likely are you to recommend this tour to others?"
     ],
-    "QuestionType": 1
+    "Type": 1
   },
   {
     "Id": "questions3",
@@ -33,6 +33,6 @@
       "Did the tourist ask relevant and thoughtful questions during the tour?",
       "Did the tourist demonstrate patience and flexibility in dealing with unforeseen circumstances or changes to the itinerary?"
     ],
-    "QuestionType": 0
+    "Type": 0
   }
 ]

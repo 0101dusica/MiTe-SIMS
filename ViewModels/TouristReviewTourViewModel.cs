@@ -1,5 +1,6 @@
 ﻿using MiTe.Storage;
 using MiTe.Views;
+using MiTe.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -51,7 +52,7 @@ namespace MiTe.ViewModels
 
             foreach (var question in MainStorage.Questions)
             {
-                if (question.Type == Models.QuestionType.Tourist)
+                if (question.Type == QuestionType.Tour)
                 {
                     Questions = question.TextQuestions;
                 }
