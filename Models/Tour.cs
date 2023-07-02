@@ -35,7 +35,6 @@ namespace MiTe.Models
         public string GuideUsername { get; set; }
         public string City { get; set; }
         public List<Category> Category { get; set; }
-        public double AverageRating { get; set; }
         public bool Free { get; set; }
         public string ImagePath { get; set; }
 
@@ -54,7 +53,6 @@ namespace MiTe.Models
             GuideUsername = guideUsername;
             City = city;
             Category = category;
-            AverageRating = 0;
             Free = free;
             ImagePath = imagePath;
             TourStatus = TourStatus.WaitingApproval;

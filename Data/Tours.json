@@ -61,7 +61,7 @@
     "Category": [ 0, 3, 7 ],
     "Free": true,
     "ImagePath": "../Images/paris2.jpg",
-    "TourStatus": 2
+    "TourStatus": 0
   }
 
 ]
