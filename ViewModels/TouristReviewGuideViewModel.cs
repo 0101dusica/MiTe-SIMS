@@ -34,8 +34,8 @@ namespace MiTe.ViewModels
         }
 
         public List<string> Questions { get; set; }
-        ICommand Submit { get; }
-        ICommand LogOut { get; }
+        public ICommand Submit { get; }
+        public ICommand LogOut { get; }
 
         public TouristReviewGuideViewModel(MainStorage mainStorage, TouristReviewGuideView touristReviewGuideView)
         {
@@ -53,7 +53,7 @@ namespace MiTe.ViewModels
 
             foreach (var question in MainStorage.Questions)
             {
-                if (question.Type == Models.QuestionType.Tourist)
+                if (question.Type == Models.QuestionType.Guide)
                 {
                     Questions = question.TextQuestions;
                 }
@@ -69,8 +69,8 @@ namespace MiTe.ViewModels
         }
         public void LogOutCommand(object param)
         {
-            GuideMainView mainView = new GuideMainView(MainStorage);
-            this.TouristReviewGuideView.Hide();
+            TouristMainView mainView = new TouristMainView(MainStorage);
+            this.TouristReviewTourView.Hide();
             mainView.Show();
         }
     }

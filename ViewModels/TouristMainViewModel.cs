@@ -55,7 +55,7 @@ namespace MiTe.ViewModels
         }
         public void ReviewTourCommand(object param)
         {
-            TouristReserveTourView mainView = new TouristReserveTourView(MainStorage);
+            TouristReviewTourView mainView = new TouristReviewTourView(MainStorage);
             this.TouristMainView.Hide();
             mainView.Show();
         }
@@ -67,8 +67,8 @@ namespace MiTe.ViewModels
         }
         public void LogOutCommand(object param)
         {
-            MainWindow mainView = new MainWindow();
-            this.TouristMainView.Hide();
+            TouristMainView mainView = new TouristMainView(MainStorage);
+            this.TouristReviewTourView.Hide();
             mainView.Show();
         }
     }
