@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MiTe.Storage;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Policy;
@@ -20,7 +21,7 @@ namespace MiTe.Models
         public Atraction() { }
         public Atraction(string title, string description, string address, string city, string country, string image) 
         {
-            Id = setNextId();
+            Id = NextId(new MainStorage());
             Title = title;
             Description = description;
             Address = address;
@@ -29,9 +30,27 @@ namespace MiTe.Models
             Image = image;
         }
 
-        public string setNextId()
+        public string NextId(MainStorage mainStorage)
         {
-            return "atractionX";
+            string id = "";
+            int lastId;
+
+            if (mainStorage.Tours.Count == 0)
+            {
+                lastId = 0;
+            }
+            else
+            {
+                foreach (Tour tourStorage in mainStorage.Tours)
+                {
+                    id = tourStorage.Id;
+                }
+
+                lastId = int.Parse(System.Text.RegularExpressions.Regex.Replace(id, @"[^\d]+", ""));
+
+            }
+            return ("atraction" + (lastId + 1).ToString());
+
         }
     }
 }

@@ -1,0 +1,204 @@
+﻿<Window x:Class="MiTe.Views.GuideReviewTouristView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:viewmodels="clr-namespace:MiTe.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:GuideMakeTourViewModel}"
+        mc:Ignorable="d"
+    Title="MiTe" WindowStartupLocation="CenterScreen"
+    ResizeMode="NoResize" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="FocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" SnapsToDevicePixels="true" StrokeThickness="1"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
+        <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
+        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
+        <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+        <Style x:Key="RoundedButtonShape" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" CornerRadius="20" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.MouseOver.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Pressed.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Pressed.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Window.Background>
+        <ImageBrush ImageSource="..\Images\background2.jpg" Opacity="0.5" />
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+
+
+            <StackPanel Grid.Row="0">
+            <TextBlock Text="{Binding Questions[0]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <RadioButton Grid.Column="0" Content="1" GroupName="Question1" IsChecked="{Binding Ratings[0]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="1" Content="2" GroupName="Question1" IsChecked="{Binding Ratings[1]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="2" Content="3" GroupName="Question1" IsChecked="{Binding Ratings[2]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="3" Content="4" GroupName="Question1" IsChecked="{Binding Ratings[3]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="4" Content="5" GroupName="Question1" IsChecked="{Binding Ratings[4]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+            </Grid>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1">
+            <TextBlock Text="{Binding Questions[1]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <RadioButton Grid.Column="0" Content="1" GroupName="Question2" IsChecked="{Binding Ratings[5]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="1" Content="2" GroupName="Question2" IsChecked="{Binding Ratings[6]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="2" Content="3" GroupName="Question2" IsChecked="{Binding Ratings[7]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="3" Content="4" GroupName="Question2" IsChecked="{Binding Ratings[8]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="4" Content="5" GroupName="Question2" IsChecked="{Binding Ratings[9]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+            </Grid>
+        </StackPanel>
+    
+            <StackPanel Grid.Row="2">
+            <TextBlock Text="{Binding Questions[2]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <RadioButton Grid.Column="0" Content="1" GroupName="Question3" IsChecked="{Binding Ratings[10]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="1" Content="2" GroupName="Question3" IsChecked="{Binding Ratings[11]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="2" Content="3" GroupName="Question3" IsChecked="{Binding Ratings[12]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="3" Content="4" GroupName="Question3" IsChecked="{Binding Ratings[13]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="4" Content="5" GroupName="Question3" IsChecked="{Binding Ratings[14]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+            </Grid>
+            </StackPanel>
+
+            <StackPanel Grid.Row="3">
+                <TextBlock Text="{Binding Questions[3]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <RadioButton Grid.Column="0" Content="1" GroupName="Question4" IsChecked="{Binding Ratings[15]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="1" Content="2" GroupName="Question4" IsChecked="{Binding Ratings[16]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="2" Content="3" GroupName="Question4" IsChecked="{Binding Ratings[17]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="3" Content="4" GroupName="Question4" IsChecked="{Binding Ratings[18]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="4" Content="5" GroupName="Question4" IsChecked="{Binding Ratings[19]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+            </Grid>
+            </StackPanel>
+
+            <StackPanel Grid.Row="4">
+            <TextBlock Text="{Binding Questions[4]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <RadioButton Grid.Column="0" Content="1" GroupName="Question5" IsChecked="{Binding Ratings[20]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="1" Content="2" GroupName="Question5" IsChecked="{Binding Ratings[21]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="2" Content="3" GroupName="Question5" IsChecked="{Binding Ratings[22]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="3" Content="4" GroupName="Question5" IsChecked="{Binding Ratings[23]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="4" Content="5" GroupName="Question5" IsChecked="{Binding Ratings[24]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+            </Grid>
+            </StackPanel>
+
+            <StackPanel Grid.Row="5">
+            <TextBlock Text="{Binding Questions[5]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <RadioButton Grid.Column="0" Content="1" GroupName="Question6" IsChecked="{Binding Ratings[25]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="1" Content="2" GroupName="Question6" IsChecked="{Binding Ratings[26]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="2" Content="3" GroupName="Question6" IsChecked="{Binding Ratings[27]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="3" Content="4" GroupName="Question6" IsChecked="{Binding Ratings[28]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+                <RadioButton Grid.Column="4" Content="5" GroupName="Question6" IsChecked="{Binding Ratings[29]}" HorizontalAlignment="Center" FontWeight="Bold" Foreground="DarkBlue"/>
+            </Grid>
+            </StackPanel>
+
+        <!-- Add more StackPanels for additional questions -->
+
+        <Button x:Name="one" Grid.Row="6" Opacity="0.7" VerticalContentAlignment="Center" Style="{DynamicResource RoundedButtonShape}" Content="SUBMIT" FontSize="16" Margin="0 3" Background="LightGray" Foreground="DarkBlue" FontWeight="Bold" Command="{Binding Submit}"/>
+        <Button x:Name="two" Grid.Row="7" Opacity="0.6" VerticalContentAlignment="Center" Style="{DynamicResource RoundedButtonShape}" Content="BACK" FontSize="16" Margin="0 3" Background="LightGray" Foreground="DarkBlue" FontWeight="Bold" Command="{Binding LogOut}"/>
+    </Grid>
+</Window>
+
+
+

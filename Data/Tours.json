@@ -23,7 +23,7 @@
     ],
     "GuideUsername": "vesna",
     "City": "Paris",
-    "Category": [ 0, 7 ],
+    "Category": [ 0, 6 ],
     "Free": true,
     "ImagePath": "../Images/paris1.jpg",
     "TourStatus": 0
@@ -58,7 +58,7 @@
     ],
     "GuideUsername": "mark",
     "City": "Paris",
-    "Category": [ 0, 7, 8 ],
+    "Category": [ 0, 3, 7 ],
     "Free": true,
     "ImagePath": "../Images/paris2.jpg",
     "TourStatus": 2

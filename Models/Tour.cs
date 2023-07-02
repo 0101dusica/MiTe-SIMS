@@ -1,6 +1,7 @@
 ﻿using MiTe.Storage;
 using System;
 using System.Collections.Generic;
+using System.Windows.Controls;
 
 namespace MiTe.Models
 {
@@ -14,7 +15,7 @@ namespace MiTe.Models
     }
     public enum Category
     {
-        Cultural, Adventure, Food, Sightseeing, Wildlife, Nature, Historical, Educational, Photography, Wellness, Private
+        Cultural, Adventure, Food, Nature, Historical, Educational, Photography, Wellness
     }
     public enum TourStatus
     {
@@ -40,9 +41,9 @@ namespace MiTe.Models
 
         public TourStatus TourStatus { get; set; }
         public Tour() { }
-        public Tour(string id, int capasity, Language language, DateOnly startDate, DateOnly endDate, List<Days> maintenanceDays, List<Stage> stages, string guideUsername, string city, List<Category> category, double avrRating, bool free, string imagePath)
+        public Tour(int capasity, Language language, DateOnly startDate, DateOnly endDate, List<Days> maintenanceDays, List<Stage> stages, string guideUsername, string city, List<Category> category, bool free, string imagePath)
         {
-            Id = id;
+            Id = NextId(new MainStorage());
             Capasity = capasity;
             Language = language;
             StartDate = startDate;
@@ -53,10 +54,33 @@ namespace MiTe.Models
             GuideUsername = guideUsername;
             City = city;
             Category = category;
-            AverageRating = avrRating;
+            AverageRating = 0;
             Free = free;
             ImagePath = imagePath;
             TourStatus = TourStatus.WaitingApproval;
+        }
+
+        public string NextId(MainStorage mainStorage)
+        {
+            string id = "";
+            int lastId;
+
+            if (mainStorage.Tours.Count == 0)
+            {
+                lastId = 0;
+            }
+            else
+            {
+                foreach (Tour tourStorage in mainStorage.Tours)
+                {
+                    id = tourStorage.Id;
+                }
+
+                lastId = int.Parse(System.Text.RegularExpressions.Regex.Replace(id, @"[^\d]+", ""));
+
+            }
+            return ("tour" + (lastId + 1).ToString());
+
         }
 
         public Tuple<string, double> getAvrageRatings(MainStorage mainStorage)

@@ -41,15 +41,21 @@ namespace MiTe.ViewModels
 
         public void MakeNewTourCommand(object param)
         {
-            MessageBox.Show("MakeNewTourCommand");
+            GuideMakeTourView guideMakeTourView = new GuideMakeTourView(MainStorage);
+            this.GuideMainView.Hide();
+            guideMakeTourView.Show();
         }
         public void ReviewTouristCommand(object param)
         {
-            MessageBox.Show("ReviewTouristCommand");
+            GuideReviewTouristView guideReviewTouristView = new GuideReviewTouristView(MainStorage);
+            this.GuideMainView.Hide();
+            guideReviewTouristView.Show();
         }
         public void AddNewAtractionCommand(object param)
         {
-            MessageBox.Show("AddNewAtractionCommand");
+            GuideMakeAttractionView guideMakeAttractionView = new GuideMakeAttractionView(MainStorage);
+            this.GuideMainView.Hide();
+            guideMakeAttractionView.Show();
         }
         public void LogOutCommand(object param)
         {
