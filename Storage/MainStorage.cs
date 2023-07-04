@@ -19,7 +19,6 @@ namespace MiTe.Storage
         public List<Reservation>? Reservations { get; set; }
         public List<Poll>? Polls { get; set; }
         public List<Questions>? Questions { get; set; }
-        public List<Ad>? Ads { get; set; }
 
         public AdministratorStorage administratorStorage { get; set; }
         public TouristStorage touristStorage { get; set; }
@@ -29,7 +28,6 @@ namespace MiTe.Storage
         public ReservationStorage reservationStorage { get; set; }
         public PollStorage pollStorage { get; set; }
         public QuestionsStorage questionsStorage { get; set; }
-        public AdStorage adStorage { get; set; }
         public MainStorage()
         {
             this.Administrators = new List<Administrator>();
@@ -40,7 +38,6 @@ namespace MiTe.Storage
             this.Reservations = new List<Reservation>();
             this.Polls = new List<Poll>();
             this.Questions = new List<Questions>();
-            this.Ads = new List<Ad>();
 
             this.administratorStorage = new AdministratorStorage();
             this.touristStorage = new TouristStorage();
@@ -50,7 +47,6 @@ namespace MiTe.Storage
             this.reservationStorage = new ReservationStorage();
             this.pollStorage = new PollStorage();
             this.questionsStorage = new QuestionsStorage();
-            this.adStorage = new AdStorage();
         }
 
         public void loadAllData()
@@ -63,8 +59,6 @@ namespace MiTe.Storage
             this.Reservations = reservationStorage.Load();
             this.Polls = pollStorage.Load();
             this.Questions = questionsStorage.Load();
-            this.Ads = adStorage.Load();
-
         }
 
     }

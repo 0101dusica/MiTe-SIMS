@@ -17,6 +17,7 @@ namespace MiTe.ViewModels
         public TouristReserveTourView TouristReserveTourView { get; set; }
 
         public List<Tuple<Tour, double>> Tours { get; set; }
+        public DateOnly PickDate { get; set; }
         public ICommand Submit { get; }
         public ICommand LogOut { get; }
 
