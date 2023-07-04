@@ -129,7 +129,7 @@
         </DataGrid>
         
         <!-- Pick a Date -->
-        <DatePicker Grid.Row="1" SelectedDate="{Binding PickDate, Mode=TwoWay}" Margin="0 0 0 10" Width="550" Opacity="0.7" Background="LightBlue"/>
+        <DatePicker Grid.Row="1" SelectedDate="{Binding PickDate, Mode=TwoWay}" Margin="0 0 0 10" Width="250" Opacity="0.7" Background="LightBlue"/>
 
         <Button x:Name="one" Grid.Row="2" Opacity="0.7" VerticalContentAlignment="Center" Style="{DynamicResource RoundedButtonShape}" Content="RESERVE TOUR" FontSize="16" Margin="0 3" Background="LightBlue" Foreground="DarkBlue" FontWeight="Bold" Command="{Binding Submit}"/>
         <Button x:Name="two" Grid.Row="3" Opacity="0.6" VerticalContentAlignment="Center" Style="{DynamicResource RoundedButtonShape}" Content="BACK" FontSize="16" Margin="0 3" Background="LightGray" Foreground="DarkBlue" FontWeight="Bold" Command="{Binding LogOut}"/>
