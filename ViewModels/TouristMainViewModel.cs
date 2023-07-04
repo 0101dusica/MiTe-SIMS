@@ -43,7 +43,7 @@ namespace MiTe.ViewModels
 
         public void ReserveTourCommand(object param)
         {
-            TouristReserveTourView mainView = new TouristReserveTourView(MainStorage);
+            TourisShowReservationView mainView = new TourisShowReservationView(MainStorage);
             this.TouristMainView.Hide();
             mainView.Show();
         }

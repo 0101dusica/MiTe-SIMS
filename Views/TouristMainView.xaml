@@ -83,7 +83,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button x:Name="one" Grid.Column="0" Opacity="0.7" Style="{DynamicResource RoundedButtonShape}" Content="Reserve Tour" FontSize="16" Margin="0 3"  Background="#FF90C2EE"  Foreground="DarkBlue" FontWeight="Bold" Command="{Binding ReserveTour}"/>
+            <Button x:Name="one" Grid.Column="0" Opacity="0.7" Style="{DynamicResource RoundedButtonShape}" Content="Reservations" FontSize="16" Margin="0 3"  Background="#FF90C2EE"  Foreground="DarkBlue" FontWeight="Bold" Command="{Binding ReserveTour}"/>
             <Button x:Name="two" Grid.Column="1" Opacity="0.7" Style="{DynamicResource RoundedButtonShape}" Content="Verify QR" FontSize="16" Margin="0 3"  Background="#FF90C2EE"  Foreground="DarkBlue" FontWeight="Bold" Command="{Binding VerifyQR}"/>
             <Button x:Name="three" Grid.Column="2" Opacity="0.7" Style="{DynamicResource RoundedButtonShape}" Content="Review Tour" FontSize="16" Margin="0 3"  Background="#FF90C2EE"  Foreground="DarkBlue" FontWeight="Bold" Command="{Binding ReviewTour}"/>
             <Button x:Name="four" Grid.Column="3" Opacity="0.7" Style="{DynamicResource RoundedButtonShape}" Content="Review Guide" FontSize="16" Margin="0 3"  Background="#FF90C2EE"  Foreground="DarkBlue" FontWeight="Bold" Command="{Binding ReviewGuide}"/>
