@@ -1,32 +1,37 @@
 [
   {
     "TourId": "tour1",
-    "TouristUsernames": [ "sarah" ],
-    "QRCodes": [ "qr2" ],
+    "TouristUsername": "sarah",
+    "NumberOfPeople": 2,
+    "QRCodes": "qr2",
     "StartDate": "2023-08-20T12:30:00"
   },
   {
     "TourId": "tour1",
-    "TouristUsernames": [ "ana" ],
-    "QRCodes": [ "qr1" ],
+    "TouristUsername": "ana",
+    "NumberOfPeople": 1,
+    "QRCodes": "qr1",
     "StartDate": "2023-08-20T12:30:00"
   },
   {
     "TourId": "tour2",
-    "TouristUsernames": [ "michael" ],
-    "QRCodes": [ "qr3" ],
+    "TouristUsernames": "michael",
+    "NumberOfPeople": 1,
+    "QRCodes": "qr3",
     "StartDate": "2023-07-09T09:15:00"
   },
   {
     "TourId": "tour2",
-    "TouristUsernames": [ "sarah" ],
-    "QRCodes": [ "qr4" ],
+    "TouristUsernames": "sarah",
+    "NumberOfPeople": 3,
+    "QRCodes": "qr4",
     "StartDate": "2023-07-09T09:15:00"
   },
   {
     "TourId": "tour3",
-    "TouristUsernames": [ "ana" ],
-    "QRCodes": [ "qr5" ],
+    "TouristUsernames": "ana",
+    "NumberOfPeople": 5,
+    "QRCodes": "qr5",
     "StartDate": "2023-07-19T09:15:00"
   }
 ]

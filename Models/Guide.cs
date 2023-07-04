@@ -15,7 +15,7 @@ namespace MiTe.Models
         {
             Tours = new List<string>();
         }
-
+        
         public Tuple<string, double> getAvrageRatings(MainStorage mainStorage)
         {
             double ratingSum = 0;
