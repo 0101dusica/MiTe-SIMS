@@ -72,7 +72,6 @@
             <RowDefinition Height="0.1*"/>
             <RowDefinition Height="0.1*"/>
             <RowDefinition Height="0.1*"/>
-            <RowDefinition Height="0.1*"/>
         </Grid.RowDefinitions>
 
         <DataGrid x:Name="DataTableGuides" Grid.Row="0" Margin="10" AutoGenerateColumns="False" Background="Transparent" ItemsSource="{Binding Reservations}" SelectedItem="{Binding SelectedRowGuide}">
@@ -129,12 +128,10 @@
             </DataGrid.CellStyle>
         </DataGrid>
 
-        <!-- Pick a Date -->
-        <DatePicker Grid.Row="1" SelectedDate="{Binding PickDate, Mode=TwoWay}" Margin="0 0 0 10" Width="250" Opacity="0.7" Background="LightBlue"/>
-
-        <Button x:Name="one" Grid.Row="2" Opacity="0.7" VerticalContentAlignment="Center" Style="{DynamicResource RoundedButtonShape}" Content="RESERVE NEW TOUR" FontSize="16" Margin="0 3" Background="LightBlue" Foreground="DarkBlue" FontWeight="Bold" Command="{Binding AddNew}"/>
-        <Button x:Name="one" Grid.Row="3" Opacity="0.7" VerticalContentAlignment="Center" Style="{DynamicResource RoundedButtonShape}" Content="RESERVE NEW TOUR" FontSize="16" Margin="0 3" Background="LightBlue" Foreground="DarkBlue" FontWeight="Bold" Command="{Binding Delete}"/>
-        <Button x:Name="two" Grid.Row="4" Opacity="0.6" VerticalContentAlignment="Center" Style="{DynamicResource RoundedButtonShape}" Content="BACK" FontSize="16" Margin="0 3" Background="LightGray" Foreground="DarkBlue" FontWeight="Bold" Command="{Binding LogOut}"/>
+       
+        <Button x:Name="one" Grid.Row="1" Opacity="0.7" VerticalContentAlignment="Center" Style="{DynamicResource RoundedButtonShape}" Content="RESERVE NEW TOUR" FontSize="16" Margin="0 3" Background="LightBlue" Foreground="DarkBlue" FontWeight="Bold" Command="{Binding AddNew}"/>
+        <Button x:Name="two" Grid.Row="2" Opacity="0.7" VerticalContentAlignment="Center" Style="{DynamicResource RoundedButtonShape}" Content="DELETE NEW RESERVATION" FontSize="16" Margin="0 3" Background="LightBlue" Foreground="DarkBlue" FontWeight="Bold" Command="{Binding Delete}"/>
+        <Button x:Name="three" Grid.Row="3" Opacity="0.6" VerticalContentAlignment="Center" Style="{DynamicResource RoundedButtonShape}" Content="BACK" FontSize="16" Margin="0 3" Background="LightGray" Foreground="DarkBlue" FontWeight="Bold" Command="{Binding LogOut}"/>
     </Grid>
 </Window>
 
