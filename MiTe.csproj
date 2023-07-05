@@ -13,6 +13,7 @@
     <None Remove="Images\none.png" />
     <None Remove="Images\paris1.jpg" />
     <None Remove="Images\paris2.jpg" />
+    <None Remove="Images\profilePicture.jpg" />
     <None Remove="Images\qr1.png" />
     <None Remove="Images\qr2.png" />
     <None Remove="Images\qr3.png" />
@@ -31,6 +32,7 @@
     <Resource Include="Images\none.png" />
     <Resource Include="Images\paris1.jpg" />
     <Resource Include="Images\paris2.jpg" />
+    <Resource Include="Images\profilePicture.jpg" />
     <Resource Include="Images\qr1.png" />
     <Resource Include="Images\qr2.png" />
     <Resource Include="Images\qr3.png" />

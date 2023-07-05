@@ -19,7 +19,7 @@ namespace MiTe.Models
     }
     public enum TourStatus
     {
-        Accepted, Rejected, WaitingApproval
+        Accepted, Rejected, WaitingApproval, Expired
     }
 
     public class Tour

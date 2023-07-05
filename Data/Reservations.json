@@ -1,14 +1,14 @@
 [
   {
     "TourId": "tour1",
-    "TouristUsername": "sarah",
+    "TouristUsernames": "sarah",
     "NumberOfPeople": 2,
     "QRCodes": "qr2",
     "StartDate": "2023-08-20T12:30:00"
   },
   {
     "TourId": "tour1",
-    "TouristUsername": "ana",
+    "TouristUsernames": "ana",
     "NumberOfPeople": 1,
     "QRCodes": "qr1",
     "StartDate": "2023-08-20T12:30:00"

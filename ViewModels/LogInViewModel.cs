@@ -3,6 +3,7 @@ using System.Windows.Input;
 using System.Windows;
 using MiTe.Storage;
 using MiTe.Views;
+using MiTe.Models;
 
 namespace MiTe.ViewModels
 {
@@ -28,6 +29,8 @@ namespace MiTe.ViewModels
             {
                 if (MainStorage.Guides[i].Username == this.Username && MainStorage.Guides[i].Password == this.Password)
                 {
+                    User user = new User(MainStorage.Guides[i].FirstName, MainStorage.Guides[i].LastName, MainStorage.Guides[i].Username, MainStorage.Guides[i].Password, true);
+                    MainStorage.LoggedUser = user;
                     MainStorage.LoggedUser = MainStorage.Guides[i];
                     GuideMainView guideMainView = new GuideMainView(MainStorage);
                     LogInView.Close();
@@ -41,6 +44,8 @@ namespace MiTe.ViewModels
             {
                 if (MainStorage.Tourists[i].Username == this.Username && MainStorage.Tourists[i].Password == this.Password)
                 {
+                    User user = new User(MainStorage.Tourists[i].FirstName, MainStorage.Tourists[i].LastName, MainStorage.Tourists[i].Username, MainStorage.Tourists[i].Password, true);
+                    MainStorage.LoggedUser = user;
                     MainStorage.LoggedUser = MainStorage.Tourists[i];
                     TouristMainView touristMainView = new TouristMainView(MainStorage);
                     LogInView.Close();
@@ -55,6 +60,8 @@ namespace MiTe.ViewModels
             {
                 if (MainStorage.Administrators[i].Username == this.Username && MainStorage.Administrators[i].Password == this.Password)
                 {
+                    User user = new User(MainStorage.Administrators[i].FirstName, MainStorage.Administrators[i].LastName, MainStorage.Administrators[i].Username, MainStorage.Administrators[i].Password, true);
+                    MainStorage.LoggedUser = user;
                     MainStorage.LoggedUser = MainStorage.Administrators[i];
                     AdministratorMainView menuAdministratorView = new AdministratorMainView(MainStorage);
                     LogInView.Close();
