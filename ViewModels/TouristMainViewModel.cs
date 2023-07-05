@@ -20,6 +20,7 @@ namespace MiTe.ViewModels
         public ICommand VerifyQR { get; }
         public ICommand ReviewTour { get; }
         public ICommand ReviewGuide { get; }
+        public ICommand ViewProfile { get; }
         public ICommand LogOut { get; }
         public TouristMainViewModel(MainStorage mainStorage, TouristMainView touristMainView)
         {
@@ -38,6 +39,7 @@ namespace MiTe.ViewModels
             VerifyQR = new RelayCommand((param) => VerifyQRCommand(param));
             ReviewTour = new RelayCommand((param) => ReviewTourCommand(param));
             ReviewGuide = new RelayCommand((param) => ReviewGuideCommand(param));
+            ViewProfile = new RelayCommand((param) => ViewProfileCommand(param));
             LogOut = new RelayCommand((param) => LogOutCommand(param));
         }
 
@@ -62,6 +64,13 @@ namespace MiTe.ViewModels
         public void ReviewGuideCommand(object param)
         {
             TouristReviewGuideView mainView = new TouristReviewGuideView(MainStorage);
+            this.TouristMainView.Hide();
+            mainView.Show();
+        }
+        
+        public void ViewProfileCommand(object param)
+        {
+            UserViewProfile mainView = new UserViewProfile(MainStorage);
             this.TouristMainView.Hide();
             mainView.Show();
         }

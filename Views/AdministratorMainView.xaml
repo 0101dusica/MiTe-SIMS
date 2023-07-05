@@ -74,13 +74,15 @@
             <RowDefinition Height="0.15*" />
             <RowDefinition Height="0.15*" />
             <RowDefinition Height="0.15*" />
+            <RowDefinition Height="0.15*" />
         </Grid.RowDefinitions>
 
 
         <Button x:Name="one" Grid.Row="1" Opacity="0.7" Style="{DynamicResource RoundedButtonShape}" Content="MANAGE TOURS" FontSize="16" Margin="0 3"  Background="#FF90C2EE"  Foreground="DarkBlue" FontWeight="Bold" Command="{Binding ManageTours}"/>
         <Button x:Name="two" Grid.Row="2" Opacity="0.7" Style="{DynamicResource RoundedButtonShape}" Content="ANALYTICS" FontSize="16" Margin="0 3"  Background="#FF90C2EE"  Foreground="DarkBlue" FontWeight="Bold" Command="{Binding Analytics}"/>
         <Button x:Name="three" Grid.Row="3" Opacity="0.7" Style="{DynamicResource RoundedButtonShape}" Content="BLOCK USER" FontSize="16" Margin="0 3"  Background="#FF90C2EE"  Foreground="DarkBlue" FontWeight="Bold" Command="{Binding BlockUser}"/>
-        <Button x:Name="four" Grid.Row="4" Opacity="0.6" Style="{DynamicResource RoundedButtonShape}" Content="LOG OUT" FontSize="16" Margin="0 3"  Background="LightGray"  Foreground="DarkBlue" FontWeight="Bold" Command="{Binding LogOut}"/>
+        <Button x:Name="three1" Grid.Row="4" Opacity="0.7" Style="{DynamicResource RoundedButtonShape}" Content="VIEW PROFILE" FontSize="16" Margin="0 3"  Background="#FF90C2EE"  Foreground="DarkBlue" FontWeight="Bold" Command="{Binding ViewProfile}"/>
+        <Button x:Name="four" Grid.Row="5" Opacity="0.6" Style="{DynamicResource RoundedButtonShape}" Content="LOG OUT" FontSize="16" Margin="0 3"  Background="LightGray"  Foreground="DarkBlue" FontWeight="Bold" Command="{Binding LogOut}"/>
         
     </Grid>
 </Window>

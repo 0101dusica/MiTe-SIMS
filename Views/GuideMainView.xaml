@@ -80,12 +80,14 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
             <Button x:Name="one" Grid.Column="0" Opacity="0.7" Style="{DynamicResource RoundedButtonShape}" Content="Add New Tour" FontSize="16" Margin="0 3"  Background="#FF90C2EE"  Foreground="DarkBlue" FontWeight="Bold" Command="{Binding MakeNewTour}"/>
             <Button x:Name="two" Grid.Column="1" Opacity="0.7" Style="{DynamicResource RoundedButtonShape}" Content="Review Tourists" FontSize="16" Margin="0 3"  Background="#FF90C2EE"  Foreground="DarkBlue" FontWeight="Bold" Command="{Binding ReviewTourist}"/>
             <Button x:Name="three" Grid.Column="2" Opacity="0.7" Style="{DynamicResource RoundedButtonShape}" Content="Add New Atraction" FontSize="16" Margin="0 3"  Background="#FF90C2EE"  Foreground="DarkBlue" FontWeight="Bold" Command="{Binding AddNewAtraction}"/>
-            <Button x:Name="four" Grid.Column="3" Opacity="0.7" Style="{DynamicResource RoundedButtonShape}" Content="Log Out" FontSize="16" Margin="0 3"  Background="LightGray"  Foreground="DarkBlue" FontWeight="Bold" Command="{Binding LogOut}"/>
+            <Button x:Name="three1" Grid.Column="3" Opacity="0.7" Style="{DynamicResource RoundedButtonShape}" Content="View Profile" FontSize="16" Margin="0 3"  Background="#FF90C2EE"  Foreground="DarkBlue" FontWeight="Bold" Command="{Binding ViewProfile}"/>
+            <Button x:Name="four" Grid.Column="4" Opacity="0.7" Style="{DynamicResource RoundedButtonShape}" Content="Log Out" FontSize="16" Margin="0 3"  Background="LightGray"  Foreground="DarkBlue" FontWeight="Bold" Command="{Binding LogOut}"/>
 
         </Grid>
         

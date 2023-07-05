@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MiTe.Storage;
+using MiTe.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +21,10 @@ namespace MiTe.Views
     /// </summary>
     public partial class UserViewProfile : Window
     {
-        public UserViewProfile()
+        public UserViewProfile(MainStorage mainStorage)
         {
             InitializeComponent();
+            DataContext = new UserViewProfileViewModel(mainStorage, this);
         }
     }
 }

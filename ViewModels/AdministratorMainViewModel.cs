@@ -17,6 +17,7 @@ namespace MiTe.ViewModels
         public ICommand ManageTours { get; }
         public ICommand Analytics { get; }
         public ICommand BlockUser { get; }
+        public ICommand ViewProfile { get; }
         public ICommand LogOut { get; }
         public AdministratorMainViewModel(MainStorage mainStorage, AdministratorMainView administratorMainView) 
         {
@@ -25,6 +26,7 @@ namespace MiTe.ViewModels
             ManageTours = new RelayCommand((param) => ManageToursCommand(param));
             Analytics = new RelayCommand((param) => AnalyticsCommand(param));
             BlockUser = new RelayCommand((param) => BlockUserCommand(param));
+            ViewProfile = new RelayCommand((param) => ViewProfileCommand(param));
             LogOut = new RelayCommand((param) => LogOutCommand(param));
         }
 
@@ -47,7 +49,14 @@ namespace MiTe.ViewModels
             this.AdministratorMainView.Hide();
             administratorBlockUsersView.Show();
         }
-        
+
+        public void ViewProfileCommand(object param)
+        {
+            UserViewProfile mainView = new UserViewProfile(MainStorage);
+            this.AdministratorMainView.Hide();
+            mainView.Show();
+        }
+
         public void LogOutCommand(object param)
         {
             MainWindow mainView = new MainWindow();

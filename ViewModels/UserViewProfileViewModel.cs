@@ -32,7 +32,7 @@ namespace MiTe.ViewModels
             LastName = MainStorage.LoggedUser.LastName;
             Username = MainStorage.LoggedUser.Username;
 
-            ImagePath = "../Images/profilePicture.jpg"; 
+            ImagePath = "../Images/profilePicture.png"; 
 
             ChangeInfo = new RelayCommand((param) => ChangeInfoCommand(param));
             ChangePassword = new RelayCommand((param) => ChangePasswordCommand(param));

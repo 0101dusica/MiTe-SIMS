@@ -19,6 +19,7 @@ namespace MiTe.ViewModels
         public ICommand MakeNewTour { get; }
         public ICommand ReviewTourist { get; }
         public ICommand AddNewAtraction { get; }
+        public ICommand ViewProfile { get; }
         public ICommand LogOut { get; }
         public GuideMainViewModel(MainStorage mainStorage, GuideMainView guideMainView) 
         {       
@@ -36,6 +37,7 @@ namespace MiTe.ViewModels
             MakeNewTour = new RelayCommand((param) => MakeNewTourCommand(param));
             ReviewTourist = new RelayCommand((param) => ReviewTouristCommand(param));
             AddNewAtraction = new RelayCommand((param) => AddNewAtractionCommand(param));
+            ViewProfile = new RelayCommand((param) => ViewProfileCommand(param));
             LogOut = new RelayCommand((param) => LogOutCommand(param));
         }
 
@@ -56,6 +58,13 @@ namespace MiTe.ViewModels
             GuideMakeAttractionView guideMakeAttractionView = new GuideMakeAttractionView(MainStorage);
             this.GuideMainView.Hide();
             guideMakeAttractionView.Show();
+        }
+
+        public void ViewProfileCommand(object param)
+        {
+            UserViewProfile mainView = new UserViewProfile(MainStorage);
+            this.GuideMainView.Hide();
+            mainView.Show();
         }
         public void LogOutCommand(object param)
         {
