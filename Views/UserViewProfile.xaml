@@ -92,15 +92,15 @@
 
                 <!-- First Name -->
                 <TextBlock Grid.Row="0" Grid.Column="0" Text="FIRST NAME:" HorizontalAlignment="Center" Foreground="DarkBlue" FontWeight="Bold"/>
-                <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding FirstName, Mode=TwoWay}" Margin="0 0 0 10" Width="250" Opacity="0.7" Background="LightBlue"/>
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding FirstName, Mode=TwoWay}" Margin="0 0 0 10" Width="250" Opacity="0.7" Background="LightBlue" HorizontalAlignment="Center" Foreground="DarkBlue" FontWeight="Bold"/>
 
                 <!-- Last Name -->
                 <TextBlock Grid.Row="1" Grid.Column="0" Text="LAST NAME:" HorizontalAlignment="Center" Foreground="DarkBlue" FontWeight="Bold"/>
-                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding LastName, Mode=TwoWay}" Margin="0 0 0 10" Width="250" Opacity="0.7" Background="LightBlue"/>
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding LastName, Mode=TwoWay}" Margin="0 0 0 10" Width="250" Opacity="0.7" Background="LightBlue" HorizontalAlignment="Center" Foreground="DarkBlue" FontWeight="Bold"/>
 
                 <!-- Username -->
                 <TextBlock Grid.Row="2" Grid.Column="0" Text="USERNAME:" HorizontalAlignment="Center" Foreground="DarkBlue" FontWeight="Bold"/>
-                <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Username, Mode=TwoWay}" Margin="0 0 0 10" Width="250" Opacity="0.7" Background="LightBlue"/>
+                <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Username, Mode=TwoWay}" Margin="0 0 0 10" Width="250" Opacity="0.7" Background="LightBlue" HorizontalAlignment="Center" Foreground="DarkBlue" FontWeight="Bold"/>
 
                 
             </Grid>
