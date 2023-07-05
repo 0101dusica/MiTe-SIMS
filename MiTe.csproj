@@ -33,7 +33,6 @@
     <Resource Include="Images\none.png" />
     <Resource Include="Images\paris1.jpg" />
     <Resource Include="Images\paris2.jpg" />
-    <Resource Include="Images\profilePicture.jpg" />
     <Resource Include="Images\profilePicture.png" />
     <Resource Include="Images\qr1.png" />
     <Resource Include="Images\qr2.png" />

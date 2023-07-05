@@ -22,7 +22,7 @@
     "Interests": [ 0, 3, 4 ],
     "PhoneNumber": "555555555",
     "Email": "michael@example.com",
-    "ProfileImage": "profile.jpeg",
+    "ProfileImage": "profilePicture.png",
     "QRCodes": [ "qr3" ],
     "Points": 100,
     "Subscription": false
@@ -36,7 +36,7 @@
     "Interests": [ 1, 3, 5 ],
     "PhoneNumber": "987654321",
     "Email": "sarahj@example.com",
-    "ProfileImage": "profile.png",
+    "ProfileImage": "profilePicture.png",
     "QRCodes": [ "qr4", "qr2" ],
     "Points": 20,
     "Subscription": true
