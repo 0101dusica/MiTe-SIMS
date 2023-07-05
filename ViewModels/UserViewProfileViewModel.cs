@@ -47,8 +47,38 @@ namespace MiTe.ViewModels
 
         public void ChangePasswordCommand(object param)
         {
-            MessageBox.Show("ChangePasswordCommand");
+            // Prompt for current password
+            string currentPassword = Microsoft.VisualBasic.Interaction.InputBox("Enter current password:", "Change Password");
+
+            // Check if the entered current password matches the logged user's password
+            if (currentPassword == MainStorage.LoggedUser.Password)
+            {
+                // Prompt for new password
+                string newPassword = Microsoft.VisualBasic.Interaction.InputBox("Enter new password:", "Change Password");
+                string confirmPassword = Microsoft.VisualBasic.Interaction.InputBox("Confirm new password:", "Change Password");
+
+                // Check if the entered passwords match
+                if (newPassword == confirmPassword)
+                {
+                    // Update the logged user's password
+                    MainStorage.LoggedUser.Password = newPassword;
+
+                    // Show success message
+                    MessageBox.Show("Password updated successfully.", "Change Password");
+                }
+                else
+                {
+                    // Show error message if passwords do not match
+                    MessageBox.Show("Passwords do not match.", "Change Password");
+                }
+            }
+            else
+            {
+                // Show error message if the entered current password is incorrect
+                MessageBox.Show("Incorrect current password.", "Change Password");
+            }
         }
+
         public void LogOutCommand(object param)
         {
             MainWindow mainView = new MainWindow();
